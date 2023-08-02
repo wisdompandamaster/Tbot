@@ -1,0 +1,14 @@
+{
+  "name": "tbot",
+  "version": "1.0.0",
+  "description": "a chatgpt robot in terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^3.3.0"
+  }
+}
