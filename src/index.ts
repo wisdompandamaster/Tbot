@@ -5,6 +5,7 @@ import { askQuestion } from "./user.js";
 import { botAnswer, initBot } from "./bot.js";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
+import colors from "colors";
 
 //  TODO:流式输出
 
@@ -23,9 +24,9 @@ initBot();
   while (true) {
     const userInput = askQuestion();
     checkExit(userInput);
-    let loading = ora("正在努力思考...\r").start();
+    // let loading = ora("正在努力思考...\r").start();
     await botAnswer();
-    loading.stop();
+    // loading.stop();
   }
 })();
 
