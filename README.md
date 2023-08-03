@@ -2,6 +2,7 @@
 a chatgpt robot run in terminal
 
 #### 功能
+- <font color="blue">支持流式输出</font>
 - 支持聊天上下文
 - exit 功能
 - 显示 loading 
