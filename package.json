@@ -2,13 +2,29 @@
   "name": "tbot",
   "version": "1.0.0",
   "description": "a chatgpt robot in terminal",
+  "type": "module",
   "main": "index.js",
+  "bin": "./dist/bundler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.config.js -w",
+    "dev": "node dist/bundler.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "openai": "^3.3.0"
+    "colors": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "openai": "^3.3.0",
+    "ora": "^7.0.1",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.4.6",
+    "@types/readline-sync": "^1.4.4",
+    "rollup": "^3.27.1",
+    "rollup-plugin-add-shebang": "^0.3.1",
+    "tslib": "^2.6.1"
   }
 }
